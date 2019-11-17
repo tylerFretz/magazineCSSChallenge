@@ -1,0 +1,150 @@
+/* css for magazine cover */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    font-family: 'Varela', sans-serif;
+    font-weight: bolder;
+    overflow-wrap: break-word;
+  }
+
+body {
+    width: 1080px;
+    min-height: 1080px;
+    background-color: #0088A2;
+}
+
+/*title*/
+
+h1 {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 18vmin;
+}
+
+h1 span {
+    width: 20%;
+    text-align: center;
+}
+
+.yellow-back {
+    color: #0088A2;
+    background-color: yellowgreen;
+    transform: scaleX(1.1);
+}
+
+.blue-back {
+    color: yellowgreen;
+    background-color: #0088A2;
+    font-family: 'BioRhyme Expanded', serif;
+    font-size: 15vmin;
+    transform: scaleY(1.5);
+}
+
+/*sections*/
+
+section {
+    position: absolute;
+    width: 30vw;
+    height: auto;
+    top: 24%;
+}
+
+#left {
+    left: 3vw;
+}
+
+#right {
+    width: 20vw;
+    right: 0.1vw;
+    margin-top: 15px;
+}
+
+/*articles*/
+
+article {
+    color: yellow;
+    font-size: 22px;
+    line-height: 32px;
+    display: block;
+    margin-bottom: 35px;
+}
+
+#left article {
+    font-size: 35px;
+    line-height: 40px;
+    max-width: 75%;
+}
+
+#right article {
+    max-width: 90%;
+}
+
+.black {
+    display: inline;
+    background: black;
+    color: white;
+    padding: 1px;
+}
+
+article h3 {
+    font-size: 45px;
+    line-height: 63px;
+    max-width: 100%;
+}
+
+article #crossed {
+    text-decoration: line-through;
+}
+
+/*main headline*/
+
+#headline {
+    width: 90%;
+    height: auto;
+    top: 75vmax;
+    left: 5%;
+    right: 5%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    z-index: 3;
+}
+
+#headline h2 {
+    font-size: 165px;
+    transform: scaleY(1.2);
+    padding-top: 5px;
+}
+
+#headline p {
+    word-spacing: 15px;
+    letter-spacing: 2px;
+    font-size: 35px;
+    padding-bottom: 5px;
+    transform: scaleX(1.15);
+}
+
+@media (max-width: 300px) {
+
+    #headline h2{
+        font-size: 2px;
+    }
+}
+
+/*main image*/
+
+img {
+    position: absolute;
+    height: auto;
+    width: 70%;
+    top: 10%;
+    left: 15%;
+    z-index: 2;
+}
